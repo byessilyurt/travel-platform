@@ -1,0 +1,32 @@
+{
+  "name": "travel-platform-backend",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "node --experimental-specifier-resolution=node -r esm node_modules/.bin/sequelize-cli db:migrate --config sequelize-cli-config.mjs",
+    "migrate-undo": "node --experimental-specifier-resolution=node -r esm node_modules/.bin/sequelize-cli db:migrate:undo --config sequelize-cli-config.mjs",
+    "migrate-all": "node --experimental-specifier-resolution=node -r esm node_modules/.bin/sequelize-cli db:migrate:all --config sequelize-cli-config.mjs",
+    "migrate-undo-all": "node --experimental-specifier-resolution=node -r esm node_modules/.bin/sequelize-cli db:migrate:undo:all --config sequelize-cli-config.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "esm": "^3.2.25",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.4.1",
+    "pg": "^8.12.0",
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
+}
